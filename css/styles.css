@@ -2,32 +2,49 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
+/* Variables */
+:root {
+    --background-color: #000;
+    --text-color: #fff;
+    --secondary-background-color: #252424;
+    --header-padding-small: 10px 20px;
+    --header-padding-medium: 15px 30px;
+    --header-padding-large: 20px 40px;
+    --header-padding-xlarge: 25px 50px;
+    --header-padding-xxlarge: 30px 60px;
+    --button-background-color: #333;
+    --button-hover-background-color: #555;
+}
+
+/* Global Styles */
 html {
     scroll-behavior: smooth;
 }
-  
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #000000;
-    color: #ffffff
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
-/* Phone */
+/* Responsive Container */
 .responsive {
     margin: 0 10%;
 }
 
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #fff;
-    padding: 10px 20px;
+    color: var(--text-color);
+    padding: var(--header-padding-small);
 }
 
+/* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
@@ -40,10 +57,11 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: var(--text-color);
     text-decoration: none;
 }
 
+/* Sections */
 section {
     height: 100vh;
     border-radius: 20px;
@@ -52,7 +70,7 @@ section {
 }
 
 section:not(#about) {
-    background-color: #252424;
+    background-color: var(--secondary-background-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -68,10 +86,11 @@ section:not(#about) {
     padding-bottom: 20px;
 }
 
+/* Back to Top Button */
 .back-to-top {
     display: inline-block;
-    background-color: #333;
-    color: #fff;
+    background-color: var(--button-background-color);
+    color: var(--text-color);
     border: none;
     border-radius: 10px;
     padding: 8px 12px;
@@ -83,43 +102,36 @@ section:not(#about) {
 }
 
 .back-to-top:hover {
-    background-color: #555;
+    background-color: var(--button-hover-background-color);
 }
-  
-/* Tablet */
+
+/* Media Queries */
 @media (min-width: 640px) {
     nav ul {
         display: flex;
     }
-    nav ul li {
-        margin-left: 20px;
-    }
 }
-  
-/* Desktop base */
+
 @media (min-width: 768px) {
     header {
-        padding: 15px 30px;
+        padding: var(--header-padding-medium);
     }
 }
-  
-/* Desktop large */
+
 @media (min-width: 1024px) {
     header {
-        padding: 20px 40px;
+        padding: var(--header-padding-large);
     }
 }
-  
-/* Desktop extra large */
+
 @media (min-width: 1280px) {
     header {
-        padding: 25px 50px;
+        padding: var(--header-padding-xlarge);
     }
 }
-  
-/* Desktop bige */
+
 @media (min-width: 1536px) {
     header {
-        padding: 30px 60px;
+        padding: var(--header-padding-xxlarge);
     }
 }
