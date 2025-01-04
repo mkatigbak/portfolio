@@ -25,7 +25,7 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     background-color: var(--background-color);
     color: var(--text-color);
 }
