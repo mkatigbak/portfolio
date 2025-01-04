@@ -67,19 +67,24 @@ a {
 
 /* Sections */
 section {
-    height: 100vh;
     border-radius: 20px;
     padding: 20px;
     margin: 20px;
 }
 
-section:not(#about) {
+#contact {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
+.icon-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 #about {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     padding-top: 25vh;
@@ -155,6 +160,10 @@ section:not(#about) {
 
 #contact {
     background-color: var(--secondary-background-color);
+}
+
+.icon {
+    width: 60px;
 }
 
 /* .description {
