@@ -1,28 +1,76 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box
+}
+  
+body {
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+/* Phone */
+.element {
+    margin: 0 10%
 }
-
-nav ul {
-    list-style: none;
-    padding: 0;
+  
+/* Tablet */
+@media (min-width: 640px) {
+    .element {
+      margin: 0 20%
+    }
 }
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+  
+/* Desktop base */
+@media (min-width: 768px) {
+    .element {
+      margin: 0 30%
+    }
 }
+  
+/* Desktop large */
+@media (min-width: 1024px) {
+    .element {
+      margin: 0 40%
+    }
+}
+  
+/* Desktop extra large */
+@media (min-width: 1280px) {
+    .element {
+      margin: 0 60%
+    }
+}
+  
+/* Desktop bige */
+@media (min-width: 1536px) {
+    .element {
+      margin: 0 80%
+    }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #333;
+        color: #fff;
+        padding: 10px 20px;
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin-left: 20px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
 }
