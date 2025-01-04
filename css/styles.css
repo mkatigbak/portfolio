@@ -53,6 +53,9 @@ section {
 
 section:not(#about) {
     background-color: #252424;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #about {
@@ -63,6 +66,24 @@ section:not(#about) {
 
 .title {
     padding-bottom: 20px;
+}
+
+.back-to-top {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.back-to-top:hover {
+    background-color: #555;
 }
   
 /* Tablet */
