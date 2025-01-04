@@ -82,6 +82,15 @@ section:not(#about) {
     padding-top: 25vh;
 }
 
+/* .description {
+    overflow: hidden;
+    border-right: .15em solid var(--text-color);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+} */
+
 .title {
     padding-bottom: 20px;
 }
@@ -105,6 +114,25 @@ section:not(#about) {
     background-color: var(--button-hover-background-color);
 }
 
+/* Animations */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: var(--text-color);
+    }
+}
+
 /* Media Queries */
 @media (min-width: 640px) {
     nav ul {
@@ -113,12 +141,20 @@ section:not(#about) {
 }
 
 @media (min-width: 768px) {
+    nav ul li {
+        padding: 0 10px;
+    }
+
     header {
         padding: var(--header-padding-medium);
     }
 }
 
 @media (min-width: 1024px) {
+    nav ul li {
+        padding: 0 20px;
+    }
+
     header {
         padding: var(--header-padding-large);
     }
