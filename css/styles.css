@@ -45,24 +45,23 @@ nav ul li a {
 }
 
 section {
-    min-height: 100vh;
+    height: 100vh;
     border-radius: 20px;
     padding: 20px;
     margin: 20px;
 }
 
 section:not(#about) {
-    background-color: #333;
+    background-color: #252424;
 }
 
 #about {
     display: flex;
     flex-direction: column;
-    padding-top: 30vh;
+    padding-top: 25vh;
 }
 
 .title {
-    text-align: center;
     padding-bottom: 20px;
 }
   
