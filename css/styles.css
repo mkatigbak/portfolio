@@ -17,7 +17,7 @@ body {
 
 /* Phone */
 .responsive {
-    margin: 0 10%
+    margin: 0 10%;
 }
 
 header {
@@ -46,10 +46,15 @@ nav ul li a {
 
 section {
     height: 100vh;
+    background-color: #333;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
 }
 
 .title {
     text-align: center;
+    padding-bottom: 20px;
 }
   
 /* Tablet */
