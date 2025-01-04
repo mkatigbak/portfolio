@@ -45,11 +45,20 @@ nav ul li a {
 }
 
 section {
-    height: 100vh;
-    background-color: #333;
+    min-height: 100vh;
     border-radius: 20px;
     padding: 20px;
     margin: 20px;
+}
+
+section:not(#about) {
+    background-color: #333;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30vh;
 }
 
 .title {
