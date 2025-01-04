@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box
 }
+
+html {
+    scroll-behavior: smooth;
+}
   
 body {
     font-family: Arial, sans-serif;
@@ -42,6 +46,10 @@ nav ul li a {
 
 section {
     height: 100vh;
+}
+
+.title {
+    text-align: center;
 }
   
 /* Tablet */
