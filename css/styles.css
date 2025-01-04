@@ -70,7 +70,6 @@ section {
 }
 
 section:not(#about) {
-    background-color: var(--secondary-background-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -80,6 +79,45 @@ section:not(#about) {
     display: flex;
     flex-direction: column;
     padding-top: 25vh;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.project {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--secondary-background-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 20px;
+    z-index: 1;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-container .project:nth-child(1) {
+    z-index: 1;
+}
+
+.project-container .project:nth-child(2) {
+    z-index: 2;
+}
+
+.project-container .project:nth-child(3) {
+    z-index: 3;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+#contact {
+    background-color: var(--secondary-background-color);
 }
 
 /* .description {
