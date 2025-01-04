@@ -11,7 +11,7 @@ body {
 }
 
 /* Phone */
-.element {
+.responsive {
     margin: 0 10%
 }
 
@@ -42,10 +42,6 @@ nav ul li a {
   
 /* Tablet */
 @media (min-width: 640px) {
-    .element {
-      margin: 0 20%
-    }
-
     nav ul {
         display: flex;
     }
@@ -56,10 +52,6 @@ nav ul li a {
   
 /* Desktop base */
 @media (min-width: 768px) {
-    .element {
-      margin: 0 30%
-    }
-
     header {
         padding: 15px 30px;
     }
@@ -67,10 +59,6 @@ nav ul li a {
   
 /* Desktop large */
 @media (min-width: 1024px) {
-    .element {
-      margin: 0 40%
-    }
-
     header {
         padding: 20px 40px;
     }
@@ -78,10 +66,6 @@ nav ul li a {
   
 /* Desktop extra large */
 @media (min-width: 1280px) {
-    .element {
-      margin: 0 60%
-    }
-
     header {
         padding: 25px 50px;
     }
@@ -89,10 +73,6 @@ nav ul li a {
   
 /* Desktop bige */
 @media (min-width: 1536px) {
-    .element {
-      margin: 0 80%
-    }
-
     header {
         padding: 30px 60px;
     }
