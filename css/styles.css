@@ -14,11 +14,43 @@ body {
 .element {
     margin: 0 10%
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
   
 /* Tablet */
 @media (min-width: 640px) {
     .element {
       margin: 0 20%
+    }
+
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        margin-left: 20px;
     }
 }
   
@@ -27,6 +59,10 @@ body {
     .element {
       margin: 0 30%
     }
+
+    header {
+        padding: 15px 30px;
+    }
 }
   
 /* Desktop large */
@@ -34,12 +70,20 @@ body {
     .element {
       margin: 0 40%
     }
+
+    header {
+        padding: 20px 40px;
+    }
 }
   
 /* Desktop extra large */
 @media (min-width: 1280px) {
     .element {
       margin: 0 60%
+    }
+
+    header {
+        padding: 25px 50px;
     }
 }
   
@@ -50,27 +94,6 @@ body {
     }
 
     header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: #333;
-        color: #fff;
-        padding: 10px 20px;
-    }
-    
-    nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    
-    nav ul li {
-        display: inline;
-        margin-left: 20px;
-    }
-    
-    nav ul li a {
-        color: #fff;
-        text-decoration: none;
+        padding: 30px 60px;
     }
 }
