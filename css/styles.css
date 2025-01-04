@@ -39,6 +39,10 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
 }
+
+section {
+    height: 100vh;
+}
   
 /* Tablet */
 @media (min-width: 640px) {
