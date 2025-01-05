@@ -199,9 +199,7 @@ section {
 /* Back to Top Button */
 .back-to-top {
     display: inline-block;
-    background-color: var(--button-background-color);
     color: var(--text-color);
-    border: none;
     border-radius: 10px;
     padding: 8px 12px;
     text-align: center;
@@ -211,9 +209,15 @@ section {
     cursor: pointer;
 }
 
-.back-to-top:hover {
-    background-color: var(--button-hover-background-color);
+.button-background:hover {
     color: #20C20E;
+    border-color: #fff;
+}
+
+.button-background {
+    padding: 10px;
+    border-radius: 10px;
+    border: 5px double #20C20E;
 }
 
 .type-text {
