@@ -110,7 +110,6 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--secondary-background-color);
     scale: 0.8;
     opacity: 0;
     animation: fade-in linear forwards;
