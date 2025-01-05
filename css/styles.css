@@ -197,6 +197,11 @@ section {
 }
 
 /* Back to Top Button */
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
 .back-to-top {
     display: inline-block;
     color: var(--text-color);
@@ -207,17 +212,14 @@ section {
     margin-top: 20px;
     font-size: 1.1em;
     cursor: pointer;
+    padding: 10px;
+    border: 5px double #20C20E;
+    border-radius: 10px;
 }
 
-.button-background:hover {
+.back-to-top:hover {
     color: #20C20E;
     border-color: #fff;
-}
-
-.button-background {
-    padding: 10px;
-    border-radius: 10px;
-    border: 5px double #20C20E;
 }
 
 .type-text {
