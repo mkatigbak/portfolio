@@ -48,6 +48,10 @@ header {
     padding: var(--header-padding-small);
 }
 
+.logo {
+    color: #20C20E;
+}
+
 /* Navigation */
 nav ul {
     list-style: none;
@@ -62,15 +66,16 @@ nav ul li {
     font-size: 1.15em;
 }
 
-nav ul li:hover {
-    font-weight: bolder;
-}
-
 nav ul li a {
     display: flex;
     align-items: center;
     text-decoration: none;
     color: var(--text-color);
+}
+
+nav ul li a:hover {
+    font-weight: bolder;
+    color: #20C20E;
 }
 
 nav ul li a img {
@@ -203,12 +208,13 @@ section {
     text-align: center;
     text-decoration: none;
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 1.1em;
     cursor: pointer;
 }
 
 .back-to-top:hover {
     background-color: var(--button-hover-background-color);
+    color: #20C20E;
 }
 
 .type-text {
