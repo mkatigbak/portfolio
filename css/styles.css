@@ -242,6 +242,21 @@ section {
     }
 }
 
+@keyframes zoomOutFadeOut {
+    0% {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.5) translateY(50%);
+        opacity: 0;
+    }
+}
+
+.zoom-out-fade-out {
+    animation: zoomOutFadeOut 1.5s forwards;
+}
+
 /* Media Queries */
 @media (min-width: 640px) {
     nav ul {
