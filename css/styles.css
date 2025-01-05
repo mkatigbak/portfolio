@@ -52,17 +52,35 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    display: flex;
+    gap: 20px;
 }
 
 nav ul li {
-    display: inline;
-    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 1.15em;
 }
 
-a {
-    color: var(--text-color);
+nav ul li:hover {
+    font-weight: bolder;
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
+    color: var(--text-color);
+}
+
+nav ul li a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+.icon-label {
+    font-size: 1.1em;
 }
 
 /* Sections */
@@ -70,17 +88,6 @@ section {
     border-radius: 20px;
     padding: 20px;
     margin: 20px;
-}
-
-#contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.icon-container {
-    display: flex;
-    justify-content: space-evenly;
 }
 
 #about {
@@ -94,6 +101,19 @@ section {
     height: 400vh;
 }
 
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--secondary-background-color);
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Project List */
 .project-container {
     width: 90%;
     margin: 0 auto;
@@ -110,71 +130,57 @@ section {
     margin-bottom: var(--project-margin);
 }
 
-#project-1 {
-    --index: 1;
-}
-
-#project-2 {
-	--index: 2;
-}
-#project-3 {
-	--index: 3;
-}
-#project-4 {
-	--index: 4;
-}
-
 .project {
     position: sticky;
     top: 0;
     padding-top: calc(var(--index) * var(--project-top-padding));
 }
 
+#project-1 {
+    --index: 1;
+}
+
+#project-2 {
+    --index: 2;
+}
+
+#project-3 {
+    --index: 3;
+}
+
+#project-4 {
+    --index: 4;
+}
+
 #project-1 .project-body {
-	background-color: #6c757d;
+    background-color: #6c757d;
 }
 
 #project-2 .project-body {
-	background-color: #495057;
+    background-color: #495057;
 }
 
 #project-3 .project-body {
-	background-color: #343a40;
+    background-color: #343a40;
 }
 
 #project-4 .project-body {
-	background-color: #212529;
+    background-color: #212529;
 }
 
 .project-body {
-	box-sizing: border-box;
-	padding: 30px;
-	border-radius: 50px;
-	box-shadow: 0 0 30px 0 rgba(0,0,0,0.3);
-	height: var(--project-height);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	transition: all 0.5s;
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
+    height: var(--project-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
 }
 
-#contact {
-    background-color: var(--secondary-background-color);
-}
-
-.icon {
-    width: 60px;
-}
-
-/* .description {
-    overflow: hidden;
-    border-right: .15em solid var(--text-color);
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .15em;
-    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
-} */
-
+/* Title */
 .title {
     padding-bottom: 20px;
 }
