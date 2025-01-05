@@ -102,6 +102,13 @@ section {
     position: relative;
 }
 
+.canada {
+    font-weight: bolder;
+    color: #FF0000;
+    background-color: white;
+    padding: 0 5px;
+}
+
 #projects {
     height: 400vh;
 }
