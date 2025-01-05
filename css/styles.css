@@ -209,6 +209,14 @@ section {
     background-color: var(--button-hover-background-color);
 }
 
+.type-text {
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1.8s steps(13), blink-caret 0.8s step-end infinite;
+}
+
 /* Animations */
 @keyframes typing {
     from {
@@ -220,11 +228,8 @@ section {
 }
 
 @keyframes blink-caret {
-    from, to {
-        border-color: transparent;
-    }
     50% {
-        border-color: var(--text-color);
+        border-color: transparent;
     }
 }
 
