@@ -282,7 +282,8 @@ section {
 }
 
 .type-text {
-  border-right: 5px solid;
+  border-right: 5px solid #fff;
+  color: #20c20e;
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
