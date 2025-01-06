@@ -386,9 +386,10 @@ figure {
     align-items: center;
 }
 
-figure h3 {
+figure figcaption {
     padding-bottom: 20px;
     text-align: center;
+    font-weight: bolder;
 }
 
 figure img {
