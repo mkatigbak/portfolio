@@ -192,9 +192,6 @@ section {
     border-radius: 50px;
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
     height: var(--project-height);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transition: all 0.5s;
 }
 
@@ -380,4 +377,28 @@ section {
     header {
         padding: var(--header-padding-xxlarge);
     }
+}
+
+figure {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure h3 {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.project-link-container {
+    display: flex;
+    justify-content: end;
 }
