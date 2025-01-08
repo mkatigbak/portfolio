@@ -262,9 +262,12 @@ section {
   border-radius: 50px;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
   height: var(--project-height);
-  
-  align-items: center;
   transition: all 0.5s;
+}
+
+.project-container .project-body .project-title {
+  display: flex;
+  justify-content: space-between;
 }
 
 .project-container .project-body hr {
