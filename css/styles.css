@@ -131,6 +131,79 @@ section {
   margin-bottom: 20px;
 }
 
+/* Slide */
+.logos {
+  background-color: #000;
+  height: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 25px 0;
+  position: relative;
+  white-space: nowrap;
+  width: 90%
+}
+
+.logos:after,.logos:before {
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 150px;
+  z-index: 2
+}
+
+.logos:before {
+  background: linear-gradient(270deg,hsla(0,0%,100%,0),#000);
+  left: 0
+}
+
+.logos:after {
+  background: linear-gradient(90deg,hsla(0,0%,100%,0),#000);
+  right: 0
+}
+
+.scroll-slide {
+  -webkit-animation: scroll 20s linear infinite;
+  animation: scroll 20s linear infinite;
+  display: inline-block
+}
+
+.scroll-slide span {
+  background: #212529;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: .3em;
+  margin: 0 30px;
+  padding: 10px 15px;
+  text-transform: uppercase
+}
+
+@-webkit-keyframes scroll {
+  0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0)
+  }
+
+  to {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%)
+  }
+}
+
+@keyframes scroll {
+  0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0)
+  }
+
+  to {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%)
+  }
+}
+
 /* Project List */
 .project-container {
   width: 100%;
