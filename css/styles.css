@@ -265,6 +265,7 @@ section {
   transition: all 0.5s;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .project-container .project-body .project-title {
