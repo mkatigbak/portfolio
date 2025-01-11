@@ -241,7 +241,7 @@ section {
 }
 
 #project-1 .project-body {
-  background-color: #6c757d;
+  background-image: url(../images/project-2.jpg);
 }
 
 #project-2 .project-body {
@@ -263,6 +263,8 @@ section {
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
   height: var(--project-height);
   transition: all 0.5s;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .project-container .project-body .project-title {
@@ -314,6 +316,12 @@ button:hover .svg-icon {
 .project-container .project-body hr {
   width: 100%;
   border: 1px solid #fff;
+}
+
+.project-container p {
+  background-color: #000;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 .project-container .project-body .project-content {
