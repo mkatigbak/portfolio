@@ -567,7 +567,7 @@ button:hover .svg-icon {
 
 @media (min-width: 600px) {
   #about {
-    padding-top: 10vh;
+    padding-top: 20vh;
   }
 }
 
@@ -607,10 +607,6 @@ button:hover .svg-icon {
 @media (min-width: 640px) {
   nav ul {
     display: flex;
-  }
-
-  #about {
-    padding-top: 20vh;
   }
 }
 
